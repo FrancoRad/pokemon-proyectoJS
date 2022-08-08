@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="spinner.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/check?s=duotone">
+
+    <title>Proyecto Integrador JS</title>
+    <link rel="icon" href="./img/pokebola.png">
+</head>
+<body>
+    <main>
+        <section class="seccion1" id="seccion1">
+            <header>
+                <nav>
+                    <div class="conteiner">
+                        <div class="conteiner-logo">
+                            <a class="logo" href="./index.html"><img src="./img/pokebola.png" height="75" width="75"></a>
+                            <h1>POKESHOP</h1>
+                        </div>
+                        <ul class="links">
+                            <li class="link"><a href="#seccion2">Pokemones</a></li>
+                            <li class="link"><a href="#footer">Contacto</a></li>
+                            <li class="link"><a href="./loguearse.html">Log</a></li>
+                            <li class="link">
+                                <li class="submenu link">
+                                    <img src="img/cart.png" id="img-carrito">
+                                    <div id="carrito">
+                                        <table id="lista-carrito" class="u-full-width">
+                                            <tbody class="mostrarCarrito"></tbody>
+                                        </table>
+                                        <form action="#" id="vaciar-carrito">
+                                            
+                                            <input type="submit" value="vaciar carrito" id="vaciarCarrito">
+                                        </form>
+                                    </div>
+                                </li>
+                            </li>
+                        </ul>   
+                    </div>
+                </nav>
+            </header>
+        </section>
+        <section class="seccion2" id="seccion2">
+            <form action="#" id="buscar-pokemon">
+                <input type="text" placeholder="Busca tu Pokemon favorito" id="pokemon">
+                <!-- <input type="submit" value="buscar" class="button"> -->
+
+                <button class="button" type="submit"> 
+                    <span class="textSubmit">BUSCAR</span>
+                    <strong><span class="check icon">&#10004;</span></strong>
+                </button> 
+
+            </form>
+            <div class="ubicacionMostrarTodo">
+                <form action="#" id="mostrar-todo">
+                    <input type="submit" value="mostrar todos los pokemones" id="mostrarTodo">
+                </form>
+            </div>
+            <div class="cards"></div>
+            <div class="paginacion">
+                <form action="#" id="anterior-paginacion">
+                    <input type="submit" value="<" id="anterior">
+                </form>
+                <form action="#" id="siguiente-paginacion">
+                    <input type="submit" value=">" id="siguiente">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer id="contacto">
+        <hr>
+        <div class="ubicacion">
+            <div class="footer izquierda">
+                <ul class="lista ul1">
+                    <li></li>
+                    <li><span class="icon"><i class="far fa-envelope"></i> </span>contacto@pokemon.com.ar</li>
+                    <li><span class="icon"><i class="fas fa-phone"></i> </span>456789</li>
+                    <li><span class="icon"><i class="fab fa-whatsapp"></i> </span>341 3123456</li>
+                    <li></li>
+                    <li><span class="cursiva">Únete al movimiento Pokemon</span></li>
+                        <hr>
+                        <div class="footerLista1">
+                            <ul>
+                                <div class="fb"><li><a href="http://www.facebook.com" target="_blank" class="icon-facebook"><i class="fab fa-facebook-square"></i>
+                                </a></li></div>
+                                <div class="tw"><li><a href="http://www.twitter.com" target="_blank" class="icon-twitter"><i class="fab fa-twitter-square"></i>
+                                </a></li></div>
+                                <div class="yt"><li><a href="http://www.youtube.com" target="_blank" class="icon-youtube"><i class="fab fa-youtube"></i>
+                                </a></li></div>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="centro">
+                <p><span class="cursiva">Más información</span></p>
+                <hr>
+                <ol class="footer lista ul2">
+                    <div class="footerLista2">
+                        <li><a href="./index.html"> ¿Cómo comprar?</a> </li>
+                        <li><a href="./index.html"> Manuales</a></li>
+                        <li><a href="./index.html"> Términos y condiciones</a></li>
+                        <li><a href="./index.html"> Política de devoluciones</a></li>
+                        <li><a href="./index.html"> Software Updates</a></li>
+                        <li><a href="./index.html"> Trabaja con nosotros!</a></li>    
+                        <li></li>
+                    </div>
+                </ol>
+            </div>
+            <div class="footer derecha" id="footer">
+                <p><span class="cursiva">Ubicación</span></p>
+                <hr>
+                <ul class="lista ul3">
+                    <li>Av. Rivadavia 1800 - Rosario</li>
+                    <li><iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=av%20rivadavia%201800,%20rosario+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">Car Navigation Systems</a></iframe></div></li>
+                </ul>
+            </div>
+        </div>
+        <p>Desing by Franco Rad - NUCBA</p>
+    </footer>
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>

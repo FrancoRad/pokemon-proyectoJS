@@ -1,0 +1,46 @@
+.submenu{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.submenu #carrito{
+    display: none;
+}
+ul li {
+    list-style: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.mostrarCarrito{
+    display: flex;
+    flex-direction: column;
+}
+
+.spanCarrito{
+  word-spacing: 0.5em;
+}
